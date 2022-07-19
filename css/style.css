@@ -201,6 +201,81 @@ body {
         line-height: 1.5;
     }
 
+    .about h3 {
+        font-size: 20px;
+        font-weight: 300;
+        color: gray;
+    }
+
+    .about h4 {
+        text-transform: uppercase;
+        font-weight: 300;
+        word-spacing: 3px;
+        color: gray;
+    }
+
+    .about p {
+        font-size: 14px;
+        color: gray;
+        line-height: 1.5;
+    }
+
+    .about aside, .about div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    progress {
+        display: none;
+    }
+
+    .about aside {
+       justify-content: unset;
+       flex-direction: column;
+       row-gap: 1vh;
+    }
+
+    .about > article:last-child {
+        row-gap: 50px;
+    }
+
+    .about > article:last-child > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .bars article {
+        width: 100%;
+        height: 5px;
+        background-color: gray;
+        border-radius: 15px;
+        display: flex;
+    }
+
+    .bars h6 {
+        border-radius: 15px;
+        height: 100%;
+        background-color: var(--defaultOrange);
+    }
+
+    .bars > aside:nth-child(1) h6 {
+        width: 100%;
+    }
+
+    .bars > aside:nth-child(2) h6 {
+        width: 100%;
+    }
+
+    .bars > aside:nth-child(3) h6 {
+        width: 80%;
+    }
+
+    .bars > aside:nth-child(4) h6 {
+        width: 90%;
+    }
+
     .portfolio > article:last-child {
         row-gap: 5px;
     }
