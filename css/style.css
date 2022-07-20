@@ -141,6 +141,15 @@ body {
         flex-direction: column;
     }
 
+    main > section:last-child {
+        background-color: #303030;
+        color: whitesmoke;
+    }
+
+    progress {
+        display: none;
+    }
+
     .section-title {
         display: flex;
         flex-direction: column;
@@ -226,10 +235,6 @@ body {
         justify-content: space-between;
     }
 
-    progress {
-        display: none;
-    }
-
     .about aside {
        justify-content: unset;
        flex-direction: column;
@@ -246,6 +251,39 @@ body {
         row-gap: 15px;
     }
 
+    .team img {
+        width: 100%;
+    }
+
+    .team > article {
+        row-gap: 30px;
+    }
+
+    .team figure {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .team figcaption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .team h4 {
+        text-transform: capitalize;
+        font-size: 40px;
+        color: var(--defaultOrange);
+    }
+
+    .team small {
+        font-size: 20px;
+    }
+/* commit=state point
+    -m = message, coments
+    "" = report about we are done */
     .bars article {
         width: 100%;
         height: 5px;
@@ -284,4 +322,148 @@ body {
         width: 100%;
     }
 
+    .contact {
+        row-gap: 15vh;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .contact > article:last-child {
+        padding-left: 5%;        
+    }
+
+    .contact h3 {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: 24px;
+    }
+
+    .contact > article:last-child {
+        row-gap: 10vh;
+    }
+
+    .contact > article:last-child > section:first-child {
+        padding-left: 5%;
+    }
+
+    .contact section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact ul {
+        padding-left: 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        width: 90%;
+    }
+
+    .contact li {
+        display: flex;
+        column-gap: 2vh;
+        align-items: center;
+    }
+
+    .contact i,
+    .contact a {
+        text-decoration: none;
+        color: var(--defaultOrange);
+    }
+
+    .contact i {
+        font-size: 20px;
+    }
+
+    [href^="tel"] {
+        color: whitesmoke !important;
+    }
+
+    [class="clipboard"] {
+        right: 0;
+        font-size: 14px !important;
+        padding-right: 50px;
+    }
+
+    [name="name"] {
+        width: 100%;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 3vh;
+        padding: 5%;
+    }
+
+    form > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+
+    .icon-bg {
+        display: flex;
+
+        position: relative;
+    }
+
+    .icon-bg i {
+        /* right: 0; */
+        position: absolute;
+        color: orange;
+    }
+
+
+
+    /* form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    form > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    form > div > div {
+        display: flex;
+        flex-direction: row;
+        border: 1px solid gray;
+        background-color: #303030;
+        width: 99.5%;
+    }
+
+    form > div > div > input {
+        width: 100%;
+        font-size: 20px;
+        border: none;
+        background-color: #303030;
+    }
+
+    form > div > div > i {
+        color: gray !important;
+        font-size: 20px;
+        padding: 1%;
+    }
+
+    form > div > input {
+        width: 98.7%;
+    } */
+
+
+}
+
+@media (min-width: 700px) {
+    
 }
